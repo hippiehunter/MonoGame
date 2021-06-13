@@ -337,6 +337,13 @@ namespace Microsoft.Xna.Framework
                 MathHelper.CatmullRom(value1.Y, value2.Y, value3.Y, value4.Y, amount));
         }
 
+        public static System.Numerics.Vector2 CatmullRom(System.Numerics.Vector2 value1, System.Numerics.Vector2 value2, System.Numerics.Vector2 value3, System.Numerics.Vector2 value4, float amount)
+        {
+            return new System.Numerics.Vector2(
+                MathHelper.CatmullRom(value1.X, value2.X, value3.X, value4.X, amount),
+                MathHelper.CatmullRom(value1.Y, value2.Y, value3.Y, value4.Y, amount));
+        }
+
         /// <summary>
         /// Creates a new <see cref="Vector2"/> that contains CatmullRom interpolation of the specified vectors.
         /// </summary>
